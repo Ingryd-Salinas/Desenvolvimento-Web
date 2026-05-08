@@ -50,6 +50,7 @@ const renderPokemon = async (pokemon) => {
         os colchetes significam todo o caminho feito dentro do código
         da API até encontrar a imagem d esejada*/
         pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
+        pokemonImage.style.display = '';
         input.value = '';
         searchPokemon = data.id;
     } else {
